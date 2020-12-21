@@ -1,0 +1,645 @@
+/* ----------RESET CSS---------- */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* ------------FONT------------ */
+
+@font-face
+{
+    font-family: 'Montserrat';
+    src: url('font/Montserrat/Montserrat-Medium.ttf');
+
+    font-family: 'Oxygen';
+    src: url('font/Oxygen/Oxygen-Regular.ttf');
+}
+
+/* -----------HEADER----------- */
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 0px;
+    align-items: center;
+}
+
+.inscription
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+    padding: 2%;
+}
+
+.inscription > h1
+{
+    font-family: 'Montserrat';
+    font-size: 1.6em;
+    color: white;
+}
+
+.connexion
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+    padding: 2%;
+}
+
+.connexion > h1
+{
+    font-family: 'Montserrat';
+    font-size: 1.6em;
+    color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1100px)
+{
+    .inscription,  .connexion
+    {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px)
+{
+    .inscription
+    {
+        margin-top: 10%;
+    }
+
+    .inscription > a > img
+    {
+        width: 80%;
+    }
+
+    .inscription > h1
+    {
+        font-size: 1em;
+    }
+
+    .connexion
+    {
+        margin-top: 10%;
+    }
+
+    .connexion > a > img
+    {
+        width: 80%;
+    }
+
+    .connexion > h1
+    {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 487px)
+{
+    .inscription
+    {
+        margin-top: 15%;
+    }
+
+    .connexion
+    {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 376px)
+{
+    .inscription
+    {
+        margin-top: 16%;
+    }
+
+    .inscription > h1
+    {
+        font-size: 0.9em;
+    }
+
+    .connexion
+    {
+        margin-top: 16%;
+    }
+
+    .connexion > h1
+    {
+        font-size: 0.9em;
+    }
+}
+
+/* ------------BODY------------ */
+
+.content
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+	background-image: url("img/Esport_LoL.jpg");
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.tchat
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat';
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+/* ---------PRESENTATION--------- */
+.texte
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 5% 0 5%;
+}
+
+.texte > h2
+{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 4em;
+    margin-bottom: 2%;
+}
+
+.texte > p
+{
+    color: white;
+    font-family: 'Oxygen';
+    font-size: 1.5em;
+    margin-bottom: 2%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 962px)
+{
+    .texte > h2
+    {
+        font-size: 3em;
+    }
+
+    .texte > p
+    {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px)
+{
+    .texte > h2
+    {
+        font-size: 2.5em;
+    }
+
+    .texte > p
+    {
+        font-size: 1.3em;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 601px)
+{
+    .texte > h2
+    {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 487px)
+{
+    .texte
+    {
+        margin: 15% 5% 0 5%;
+    }
+
+    .texte > h2
+    {
+        font-size: 1.5em;
+    }
+
+    .texte > p
+    {
+        font-size: 1.1em;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 376px)
+{
+    .texte
+    {
+        margin: 18% 5% 0 5%;
+    }
+}
+
+.formCO
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* ------------JEUX------------ */
+
+.rang1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.lol
+{
+    color: white;
+    font-family: 'Oxygen';
+    text-align: center;
+    font-size: 2em;
+    width: 300px;
+    padding: 50px 100px;
+    background: url('img/LoL.jpg');
+    background-position: center;
+    border-radius: 20px;
+}
+
+.ow
+{
+    color: white;
+    font-family: 'Oxygen';
+    text-align: center;
+    font-size: 2em;
+    width: 300px;
+    padding: 50px 100px;
+    background: url('img/ow.jpg');
+    background-position: center;
+    border-radius: 20px;
+}
+
+.ssbu
+{
+    color: white;
+    font-family: 'Oxygen';
+    text-align: center;
+    font-size: 2em;
+    width: 300px;
+    padding: 50px 100px;
+    background: url('img/ssbu.jpg');
+    background-position: center;
+    border-radius: 20px;
+}
+
+.rang2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.cs
+{
+    color: white;
+    font-family: 'Oxygen';
+    text-align: center;
+    font-size: 2em;
+    width: 300px;
+    padding: 50px 100px;
+    background: url('img/csgo.jpg');
+    background-position: center;
+    border-radius: 20px;
+}
+
+.ftn
+{
+    color: white;
+    font-family: 'Oxygen';
+    text-align: center;
+    font-size: 2em;
+    width: 300px;
+    padding: 50px 100px;
+    background: url('img/ftn.jpg');
+    background-position: center;
+    border-radius: 20px;
+}
+
+.resultat, .resultat :visited
+{
+    font-family: 'Montserrat';
+    margin: 5% 0 5% 0;
+    font-size: 4em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.resultat :hover
+{
+    color: #213e4e;
+}
+
+@media screen and (min-width: 0px) and (max-width: 930px)
+{
+    .rang1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lol
+    {
+        margin-bottom: 5%;
+    }
+
+    .ow, .ssbu
+    {
+        margin-bottom: 5%;
+    }
+
+    .rang2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .cs
+    {
+        margin-bottom: 5%;
+    }
+
+    .resultat, .resultat :visited
+    {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px)
+{
+    .rang1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lol
+    {
+        margin-bottom: 5%;
+    }
+
+    .ow, .ssbu
+    {
+        margin-bottom: 5%;
+    }
+
+    .rang2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .cs
+    {
+        margin-bottom: 5%;
+    }
+
+    .resultat, .resultat :visited
+    {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 679px)
+{
+    .resultat, .resultat :visited
+    {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 376px)
+{
+    .lol, .ow, .ssbu, .cs, .ftn
+    {
+        font-size: 1.5em;
+    }
+    .resultat, .resultat :visited
+    {
+        font-size: 1.6em;
+    }
+}
+
+/* ------------PSEUDO------------ */
+
+.nom
+{
+    font-family: 'Montserrat';
+    font-size: 1.7em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+}
+
+/* -----------SONDAGE----------- */
+
+.sondage
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sondage > section
+{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+.titreQuestion
+{
+    font-family: 'Montserrat';
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1%;
+    color: white;
+}
+
+.sondage a
+{
+    font-family: 'Oxygen';
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.reponses
+{
+    background-color: white;
+    width: 100%;
+    border: solid 1px black;
+    height: 60px;
+    font-family: 'Oxygen';
+    margin-top: 3%;
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reponses:hover
+{
+    background-color: #213e4e;
+    color: white;
+}
+
+.sondage a img
+{
+    margin-left: 5px;
+    width: 15px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 670px)
+{
+    .sondage
+    {
+        padding-top: 1%;
+    }
+
+    .sondage > section
+    {
+        width: 70%;
+    }
+
+    .reponses
+    {
+        font-size: 1.3em;
+    }
+
+    .nom
+    {
+        font-size: 1.2em;
+    }
+
+    .titreQuestion
+    {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 376px)
+{
+    .sondage
+    {
+        padding-top: 10%;
+    }
+
+    .sondage > section
+    {
+        width: 80%;
+    }
+
+    .reponses
+    {
+        font-size: 1.1em;
+    }
+
+    .nom
+    {
+        font-size: 1.2em;
+    }
+
+    .titreQuestion
+    {
+        font-size: 1.2em;
+    }
+}
+
+/* ---------RESULTATS--------- */
+
+.tableau
+{
+    color: white;
+    font-family: 'Oxygen';
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    margin-top: 10%;
+}
+
+.ligne
+{
+    width: 300px;
+    line-height: 200%;
+    border-bottom: thin solid white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px)
+{
+    .tableau
+    {
+        font-size: 1.5em;
+        margin-top: 15%;
+    }
+}
+
+/* -----------FOOTER----------- */
+
+footer
+{
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p
+{
+    font-family: 'Oxygen';
+    align-self: flex-end;
+    font-size: 1.2em;
+    color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px)
+{
+    footer > p
+    {
+        font-size: 1em;
+    }
+}

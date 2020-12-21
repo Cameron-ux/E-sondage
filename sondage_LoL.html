@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Fil Rouge</title>
+
+</head>
+
+    <body>
+        <header>
+
+            <section class="inscription">
+                <a href="inscription.php"><img src="asset/img/subscribe.png" alt="inscription" title="inscription"></a>
+                <h1>Inscription</h1>
+            </section>
+
+            <section class="connexion">
+                <a href="connexion.php"><img src="asset/img/user.png" alt="connexion" title="connexion"></a>
+                <h1>Connexion</h1>
+            </section>
+
+        </header>
+
+        <section class="content">
+
+            <section class="sondage">
+
+                <p class="nom" id="nom"></p>
+
+                <h2 class="titreQuestion" id="titreQuestion">Quel équipe va gagner le tournoi League of Legends ?</h2>
+                <section onclick="Question()"><button class="reponses" id="case1" type="button"><p>FNATIC</p></button></section>
+                <section onclick="Question()"><button class="reponses" id="case2" type="button"><p>Vitality</p></button></section>
+                <section onclick="Question()"><button class="reponses" id="case3" type="button"><p>Misfits Academy</p></button></section>
+                <section onclick="Question()"><button class="reponses" id="case4" type="button"><p>Origen</p></button></section>
+                <a href="index.php">Retour à l'accueil<img src="asset/img/fleche.png" alt="fleche" title="fleche"></a>
+                
+            </section>
+
+            <footer>
+                <p>Projet fil rouge © Cameron Lormont</p>
+            </footer>
+
+        </section>
+
+        <script src="asset/main.js"></script>
+
+    </body>
+
+</html>
